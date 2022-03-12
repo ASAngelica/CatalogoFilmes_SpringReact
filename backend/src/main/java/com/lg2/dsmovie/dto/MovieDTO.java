@@ -14,19 +14,19 @@ public class MovieDTO {
 	}
 
 	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
-		id = id;
-		title = title;
-		score = score;
-		count = count;
-		image = image;
+		this.id = id;
+		this.title = title;
+		this.score = score;
+		this.count = count;
+		this.image = image;
 	}
 	
 	public MovieDTO(Movie movie) {
-		this.id = movie.getId();
-		this.title = movie.getTitle();
-		this.score = movie.getScore();
-		this.count = movie.getCount();
-		this.image = movie.getImage();
+		id = movie.getId();
+		title = movie.getTitle();
+		score = movie.getScore();
+		count = movie.getCount();
+		image = movie.getImage();
 	}
 
 	public Long getId() {
